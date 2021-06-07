@@ -8,6 +8,13 @@ namespace AirportProject.Classes
 {
     class Dimensions
     {
-        float width, height, length;
+        public float width, height, length;
+
+        public Dimensions(float width, float height, float length)
+        {
+            this.width = width;
+            this.height = height;
+            this.length = length;
+        }
     }
 }
