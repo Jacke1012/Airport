@@ -6,8 +6,23 @@ using System.Threading.Tasks;
 
 namespace AirportProject.Classes
 {
-    abstract class Engine
+    public class Engine
     {
-        
+        public float thrust;
+        public float fuelUsage;
+        public string engineName;
+
+        public Engine(string engineName,float thrust, float fuelUsage)
+        {
+            this.thrust = thrust;
+            this.fuelUsage = fuelUsage;
+            this.engineName = engineName;
+        }
+
+
+        public override string ToString()
+        {
+            return engineName;
+        }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AirportProject.Classes
 {
-    class Dimensions
+    public class Dimensions
     {
         public float width, height, length;
 
@@ -15,6 +15,11 @@ namespace AirportProject.Classes
             this.width = width;
             this.height = height;
             this.length = length;
+        }
+
+        public override string ToString()
+        {
+            return $"{width}m x {height}m x {length}m";
         }
     }
 }
